@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>package.json</title>
+       <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Gestion de stock</h1>
+    <section id="add">
+    <p id="toast-add"></p>
+    <label for="add-name">nom</label>
+    <input type="text" id="add-name">
+    <label for="add-qty">quantite</label>
+    <input type="number" id="add-qty">
+    <button onclick="addProd()">Ajouter</button>
+    </section>
+   
+  <section id="delete">
+    <p id="toast-del"></p>
+    <label for="del-name">nom</label>
+    <input type="text" id="del-name">
+    <button onclick="delProd()">Supprimer</button>
+    </section>
+        
+  <section id="list">
+    <p id="toast-list"></p>
+    <label for="list">List de Prod</label>
+    <input type="text" id="list-name">
+   
+    <button onclick="listProd()">Lister</button>
+    <div id="stock-list"> </div>
+  </section>
+
+
+  <script type="module" src="/src/main.js"><script>
+  </body>
+</html>
